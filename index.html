@@ -1,1 +1,50 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Форма оплаты</title><meta name="viewport" content="width=device-width,initial-scale=1"><script defer="defer" src="/main168e33dfd08433a8dfec.js"></script><link href="/main68578fe97389a15e8e2a.css" rel="stylesheet"></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card validation</title>
+    <link href="./src/css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+
+    <div id="title">Payment required </div>
+
+  <div class="card-bounding">
+    <aside>Card Number:</aside>
+    <div class="card-container">
+      <!--- ".card-type" is a sprite used as a background image with associated classes for the major card types, providing x-y coordinates for the sprite --->
+      <div class="card-type"></div>
+      <input type="text" id="cc-number" placeholder="0000 0000 0000 0000"/>
+      <!-- The checkmark ".card-valid" used is a custom font from icomoon.io --->
+      <div class="card-valid">&#10003;</div>
+    </div>
+
+    <div class="card-details clearfix">
+
+      <div class="expiration">
+        <aside>Expiration Date</aside>
+        <input id="cc-exp" placeholder="MM/YY" />
+      </div>
+
+      <div class="cvv">
+        <aside>CVV</aside>
+        <input id="cc-cvv" placeholder="XXX"/>
+      </div>
+
+      <div class="email">
+        <aside>Enter e-mail address to get receipt</aside>
+        <input id="emailInput" placeholder="example@mail.com">
+    </div>
+
+    </div>
+    <div class="button-container">
+        <button id="submit-btn" disabled="disabled">Оплатить</button>
+    </div>
+  </div>
+    
+</body>
+</html>
